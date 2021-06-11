@@ -1,0 +1,13 @@
+<div id="chat-id">
+    <div id="chat-wrapper" [scrollTop]="scroll">
+        <ul class="chat-container"> 
+            <li class="msg" *ngFor="let msg of chat.messages">
+                <span class="sender">{{msg.sender}}</span>
+                <span class="message">{{msg.message}}</span>
+            </li>
+        </ul>
+        <input #chatbox id='chat-box' placeholder="Send message..."
+            [disabled]="drawing"
+            (keyup.enter)="sendMessage(chatbox.value); chatbox.value=''" />
+    </div>
+</div>

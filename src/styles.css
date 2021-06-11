@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+h1 {
+    font-family: Poppins;
+}
+
+canvas {
+    border: 1px solid #000;
+}
+
+app-canvas {
+    position: relative;
+    background-color: white;
+}
+
+.game-area {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: aliceblue;
+    justify-content: center;
+}
+
+#black-select {
+    width: 35px;
+    height: 35px;
+    background: black;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+#green-select {
+    width: 35px;
+    height: 35px;
+    background: green;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+#red-select {
+    width: 35px;
+    height: 35px;
+    background: red;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+#yellow-select {
+    width: 35px;
+    height: 35px;
+    background: yellow;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+#blue-select {
+    width: 35px;
+    height: 35px;
+    background: blue;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.selected-color {
+    width: 40px !important;
+    height: 40px !important;
+}
+
+#chat-id {
+    background: white;
+    margin: auto;
+    margin-top: 20px;
+    width: 90%;
+    height: 90%;
+    border-radius: 5px;
+    position: relative;
+}
+
+#chat-box {
+    position: absolute;
+    bottom: 0;
+    width: -webkit-fill-available;
+    border: 1px lightgrey solid;
+    outline: none;
+    height: 24px;
+}
+
+.msg {
+    list-style: none;
+    font-size: 12px;
+    padding: 5px 10px;
+    background: lightblue;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+.sender {
+    display: block;
+    font-weight: 600;
+    font-size: 10px;
+}
+
+.chat-container {
+    padding: 0;
+    margin-bottom: 50px;
+}
+
+#chat-wrapper {
+    background: white;
+    margin: auto;
+    margin-top: 20px;
+    width: 100%;
+    height: 90%;
+    border-radius: 5px;
+    overflow-y: scroll;
+}
+
+.hide {
+    display: none;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+app-chat {
+    background: lightgray;
+    min-width: 250px;
+    height: 412px;
+}
+html, body { height: 100%; }
+body { 
+    margin: 0; 
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+    background-color: aliceblue; 
+}
+
+  ::-webkit-scrollbar {
+    width: 5px;
+    border-radius: 2px;
+  }
+ 
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #888; 
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }

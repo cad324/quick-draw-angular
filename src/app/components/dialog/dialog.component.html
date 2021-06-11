@@ -1,0 +1,9 @@
+<div>
+    <label>Choose username:</label>
+    <input #username />
+    <button 
+        mat-raised-button 
+        [disabled]="disabled" 
+        color="primary"
+        (click)="join(username.value)">Join Session</button>
+</div>

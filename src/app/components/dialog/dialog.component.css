@@ -1,0 +1,12 @@
+div, button {
+    font-family: Poppins;
+}
+
+button {
+    margin-top: 16px;
+    font-size: 12px;
+}
+
+input {
+    padding: 4px 2px;
+}

@@ -1,0 +1,55 @@
+header {
+    text-align: center;
+    background-color: aliceblue;
+}
+
+button {
+    font-family: Poppins;
+}
+
+h1 {
+    font-family: Poppins;
+    font-weight: 800;
+}
+
+#scoreboard {
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+    pointer-events: none;
+    font-weight: 500;
+    font-family: Poppins;
+}
+
+#scoreboard > div {
+    flex-grow: 1;
+}
+
+#scoreboard div > div {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+#scoreboard > div:last-child {
+    text-align: left;
+}
+
+#scoreboard > div:first-child {
+    text-align: right;
+}
+
+#score {
+    padding: 20px 10px;
+    border-radius: 15px;
+    background-color: mediumpurple;
+    color: white;
+}
+
+#timer {
+    padding: 20px 0;
+    border-radius: 15px;
+    width: 72px;
+    text-align: center;
+    background-color: mediumpurple;
+    color: white;
+}

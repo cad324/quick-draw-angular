@@ -1,0 +1,22 @@
+<header>
+    <h1>{{ title }}</h1>
+    <div>
+        <button 
+            mat-flat-button 
+            color="primary" 
+            [disabled]="gameStarted" 
+            (click)="startGame()">Start Game</button>
+        <div id="scoreboard">
+            <div>
+                <div id="score">Score: {{ score }}</div>
+            </div>
+            <div>
+                <div id="timer">{{ time }}s</div>
+            </div>
+        </div>
+        <div [class]="myTurn ? null : 'invisible'" id="word">Your word: {{ drawingWord }}</div>
+        <div [class]="showWord ? null : 'invisible'" id="show-word">
+            {{ winner }} guessed the word: {{ drawingWord }}
+        </div>
+    </div>
+</header>
