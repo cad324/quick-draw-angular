@@ -31,6 +31,9 @@ export class AppComponent {
     })
 
     const openGameOverDialog = (data) => {
+      let tempData: object = data;
+      const MAX_SCORE = Math.max(...Object.values(tempData));
+      GameOverComponent.max = MAX_SCORE;
       this.dialog.open(GameOverComponent, {
         width: '250px',
         data

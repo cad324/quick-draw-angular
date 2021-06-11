@@ -61,7 +61,7 @@ io.sockets.on('connection', socket => {
 
     socket.on('gameStarted', (data) => {
         socket.broadcast.emit('gameStarted', data);
-    });
+    }); 
 
     socket.on('gameover', (roomId) => {
         io.sockets.emit('gameover', playerScores[roomId]);

@@ -18,13 +18,13 @@ interface playerScore {
 export class GameOverComponent {
 
   public scores: playerScore[] = [];
+  public static max: number = 0;
+  public gameOverComponent = GameOverComponent;
 
   constructor(
     public dialogRef: MatDialogRef<GameOverComponent>,
     public dialog: MatDialog,
-    @Inject(MAT_DIALOG_DATA) public data: DialogData,
-    private gameService: GameService,
-    private webSocket: WebSocketService) {
+    @Inject(MAT_DIALOG_DATA) public data: DialogData) {
       this.dialogRef.disableClose = true;
     }
 

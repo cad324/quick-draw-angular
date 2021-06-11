@@ -1,8 +1,9 @@
-<h4>Game over!</h4>
+<h3>Game over!</h3>
 <ul>
     <li *ngFor="let datum of data | keyvalue">
         <span>
-            {{ datum.key }} - {{ datum.value }} {{ datum.value >= 10 ? '(WINNER)' : null }}
+            {{ datum.key }} - {{ datum.value }} 
+            {{ datum.value === gameOverComponent.max ? '(WINNER)' : null }}
         </span>
     </li>
 </ul>
