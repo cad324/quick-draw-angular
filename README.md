@@ -1,8 +1,18 @@
 # QuickDrawAngular
 
+QuickDraw is a game where participants alternatively guess what the other is drawing. A player is awarded 2 points for each correct guess and 1 point each time a player correctly guesses what they are drawing. The first player to reach 10 points wins.
+
+QuickDraw is based on the game Fast Draw featured in SmallWorlds.
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.0.2.
+## Demo
+
+![](documents/screen-capture.gif)
+[_link to video_](documents/screen-capture.webm)
 
 ## Development server
+
+From the `server` directory run `node index` to start Node+Express server. [Socket.io](https://github.com/socketio/socket.io) will be running at `http://localhost:3000`.
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
